@@ -1,0 +1,305 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fraunces', serif;
+
+}
+    .container {
+     width: 1200px;
+     margin:0 auto;
+     background: white;
+     border: 1px solid black;
+     height: auto;
+    }
+    .header{
+        width:100%;
+        border: 1px solid black;
+        background-color: chartreuse;
+        height: 80px;
+    }
+    .parent{
+        display: inline-flex;
+        width:100%;
+        border: 1px solid black;
+    }
+    .left{
+        width:15%;
+        align-content:flex-start ;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: 300px;
+    }
+
+    .right{
+        width:15%;
+        align-content: flex-end;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: 300px;
+    }
+    .center{
+        display: flex;
+        flex: 1;
+        border: 1px solid black;
+        height: 300px;
+        justify-content: space-between;
+    }
+    .footer{
+        width:100%;
+        border: 1px solid black;
+        background-color: chartreuse;
+        height: 80px;
+    }
+   
+    .column{
+        width: 32%;
+        justify-content: space-between;
+    }
+    .row1
+    {
+        width: 100%;
+        height:102px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+
+    }
+    .row2
+    {
+        width: 100%;
+        height:55px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+    }
+    .row3
+    {
+        width: 100%;
+        height:55px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+    }
+    .row4
+    {
+        width: 100%;
+        height:55px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;       
+    }
+
+    .row21
+    {
+        width: 100%;
+        height:130px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+
+    }
+    .row22
+    {
+        width: 100%;
+        height:60px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+    }
+    .row23
+    {
+        width: 100%;
+        height:60px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px 3px;
+    }
+    .row31
+    {
+        width: 100%;
+        height:120px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px -4px;
+
+    }
+    .row32
+    {
+        width: 100%;
+        height:70px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px -4px;
+    }
+    .row33
+    {
+        width: 100%;
+        height:70px;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 5px -4px;
+    }
+@media only screen and (min-width:320px) and (max-width:767px){
+body{
+    margin: 0px;
+    padding: 0px;
+    }
+.container{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+    .header{
+        width:100%;
+        border: none;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent{
+        display: block;
+        width:100%;
+        border: 1px solid black;
+    }
+    .left{
+        width:100%;
+        align-content:center ;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        width:100%;
+        align-content:center;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center{
+        display: block;
+        border: 1px solid black;
+        height: auto;
+        
+    }
+    .footer{
+        width:100%;
+        border: 1px solid black;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .column{
+        width: 100%;
+    }
+    .row1
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row2
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row3
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row4
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row21
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .row22
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row23
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row31
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .row32
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row33
+    {
+        width: 100%;
+        background-color: #52c9ec;
+        border: 1px solid blue;
+        margin:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}

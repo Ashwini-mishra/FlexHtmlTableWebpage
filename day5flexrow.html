@@ -1,0 +1,387 @@
+<html>
+<title>Flex Row</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Fraunces', serif;
+
+    }
+        .container {
+         width: 1200px;
+         margin:0 auto;
+         background: white;
+         border: 1px solid black;
+         height: auto;
+        }
+        .header{
+            width:100%;
+            border: 1px solid black;
+            background-color: chartreuse;
+            height: 80px;
+        }
+        .parent{
+            display: inline-flex;
+            width:100%;
+            border: 1px solid black;
+        }
+        .left{
+            width:15%;
+            align-content:flex-start ;
+            border: 1px solid black;
+            background-color: #c39f1c75;
+            height: 330px;
+        }
+        .right{
+            width:15%;
+            align-content: flex-end;
+            border: 1px solid black;
+            background-color: #c39f1c75;
+            height: 330px;
+        }
+        .center{
+            flex: 1;
+            border: 1px solid black;
+            height: 330px;
+            justify-content: space-between;
+        }
+        .footer{
+            width:100%;
+            border: 1px solid black;
+            background-color: chartreuse;
+            height: 80px;
+        }
+        .row{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+        }
+        .column1{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:100px ;
+        }
+        .column2{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:120px ;
+        }
+        .column3{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height: 110px;
+        }
+        .row1{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            
+        }
+        .column21{
+            width: 32%;
+            align-items: flex-start;
+            background-color: cyan;
+            border: 1px solid black;
+            height:50px ;
+        }
+        .column22{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:45px ;
+            margin: 12px 0px;
+        }
+        .column23{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+        }
+        .row2{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+        }
+        .column31{
+            width: 32%;
+            align-self: start;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+        }
+        .column32{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:45px ;
+        }
+        .column33{
+            width: 32%;
+            background-color: cyan;
+            border: 1px solid black;
+            height: 56px;
+            margin: 11px 0px;
+        }
+        .column34{
+            width: 32%;
+            flex-wrap: nowrap;
+            background-color: cyan;
+            border: 1px solid black;
+            height: 40px;
+        }
+        .row4{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+        }
+        .column41{
+            width: 32%;
+            align-items: flex-start;
+            background-color: cyan;
+            border: 1px solid black;
+            height:50px ;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+body{
+    margin: 0px;
+    padding: 0px;
+    }
+.container{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+    .header{
+        width:100%;
+        border: none;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent{
+        display: block;
+        width:100%;
+        border: 1px solid black;
+    }
+    .left{
+        width:100%;
+        align-content:center ;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        width:100%;
+        align-content:center;
+        border: 1px solid black;
+        background-color: #c39f1c75;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center{
+        display: block;
+        border: 1px solid black;
+        height: auto;
+        
+    }
+    .footer{
+        width:100%;
+        border: 1px solid black;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .row{
+            display: block;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .column1{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column2{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column3{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height: auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row1{
+            display: block;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .column21{
+            width: 100%;
+            align-items: flex-start;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column22{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column23{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row2{
+            display: block;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .column31{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column32{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height: auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column33{
+            width: 100%;
+            background-color: cyan;
+            border: 1px solid black;
+            height: auto;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column34{
+            width: 100%;
+            flex-wrap: nowrap;
+            background-color: cyan;
+            border: 1px solid black;
+            height: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row4{
+            display: block;
+            width:100%;
+            justify-content: space-between;
+            height: auto;
+        }
+        .column41{
+            width: 100%;
+            align-items: flex-start;
+            background-color: cyan;
+            border: 1px solid black;
+            height:auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+</style>
+
+<body>
+<div class="container">
+    <div class="header"><p>Header</p>
+    </div>
+    <div class="parent">
+        <div class="left"><h4>Left Nav</h4></div>
+        <div class="center">
+            <div class="row">
+                <div class="column1"><h4>box 1</h4>
+                </div>
+                <div class="column2"><h4>box 2</h4>
+                </div>
+                <div class="column3"><h4>box 3</h4>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="column21"><h4>box 4</h4>
+                </div>
+                <div class="column22"><h4>box 5</h4>
+                </div>
+                <div class="column23"><h4>box 6</h4>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="column31"><h4>box 7</h4>
+                </div>
+                <div class="column32"><h4>box 8</h4>
+                </div>
+                <div class="column33"><h4>box 9</h4>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="column41"><h4>box 7</h4>
+                </div>
+            </div>
+        </div>
+        <div class="right"><h4>Right Nav</h4></div>
+    </div>
+    <div class="footer"><h4>Footer</h4></div>
+</div>
+</body>
+</html>
